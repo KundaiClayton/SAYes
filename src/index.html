@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>SAYES</title>
+</head>
+
+<body class="p-0 m-0 text-white">
+  <!-- header -->
+  <header class="bg-[#008080] shadow-none">
+    <nav class=" text-rose-50">
+      <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!--
+                    Icon when menu is closed.
+        
+                    Menu open: "hidden", Menu closed: "block"
+                  -->
+              <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                    Icon when menu is open.
+        
+                    Menu open: "block", Menu closed: "hidden"
+                  -->
+              <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
+            <div class="flex items-center flex-shrink-0">
+              <img class="w-auto h-8" src="../assets/assets/images/sayes-logo.svg" alt="logo">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:text-white">Mentees</a>
+                <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">Mentors</a>
+                <div class="relative inline-block text-left">
+                  <div>
+                    <a type="button"
+                      class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-300 bg-transparent rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                      Partner with us
+                      <!-- Heroicon name: solid/chevron-down -->
+                      <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div class="relative flex">
+              <input type="search"
+                class="rounded-full block min-h-[auto] w-full  border-1 bg-teal-600 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+                placeholder="Search" aria-label="Search" id="search-focus" aria-describedby="basic-addon4" />
+              <button
+                class=" z-[2] -ms-0.5 flex items-center rounded-e bg-primary px-5  text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                type="button" id="button-addon4" data-twe-ripple-init data-twe-ripple-color="light">
+                <img src="../assets/assets/mentors/Search icon.svg" alt="search">
+              </button>
+            </div>
+
+            <a href="https://sayesmentoring.org/sayes-mentoring-uk-get-involved/" class="mr-2">
+              <img src="../assets/assets/home-page/UK ROUND FLAG.svg" alt="uk flag"
+                class="object-cover w-full h-full rounded-full">
+            </a>
+
+            <a href="https://sayesmentoring.org/our-programmes/">
+              <img src="../assets/assets/images/sa-flag.svg" alt="sa flag"
+                class="object-cover w-full h-full rounded-full">
+            </a>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:text-white">Our
+                  Programmes</a>
+                <div class="relative inline-block text-left">
+                  <div>
+                    <a type="button"
+                      class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-300 bg-transparent rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                      Options
+                      <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+                    Dropdown menu, show/hide based on menu state.
+                  -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main body -->
+  <main>
+      <!-- Hero Carousel  Section -->
+    <div>
+
+      <div class="mySlides fade">
+        <section class="bg-gradient-to-b from-[#008080] to-[#111827] lg:py-20 lg:px-36  py-10 px-10  ">
+          <div>
+            <div class="flex justify-center ">
+              <div>
+                <img src="../assets/assets/images/sayes-icon.svg" alt="sayes-logo" class="mb-3 h-[82px]  ">
+                <h1 class="mb-4 text-[32px] lg:text-[52.82px] font-bold ">Over 1000 mentors from <span
+                    class="text-amber-400">40 countries</span></h1>
+                <p class="mb-6 text-base sm:w-[560px] pr-10">SAYes is a non-profit organization that <span
+                    class="font-bold"> provides young people with</span> <span class="font-bold text-amber-400"><a
+                      href="https://sayesmentoring.org/about/" class="underline">free </a>mentorship</span> by matching
+                  them with volunteer mentors who are professionally <span class="font-bold"> trained and supported by
+                    SAYes.</span></p>
+                <div class="flex flex-col gap-4 mb-6 sm:flex-row ">
+                  <button
+                    class="px-4 py-2 font-bold text-black rounded-full text-[13px] bg-sky-50 hover:bg-sky-250 w-full">Apply
+                    for a Mentor (free!)</button>
+                  <button
+                    class="px-4 w-full  py-2 font-bold text-black rounded-full bg-amber-300 text-[13px] hover:bg-amber-500">Become
+                    a Mentor</button>
+                  <button
+                    class="px-4 w-full py-2 font-bold text-white bg-blue-500 rounded-full text-[13px] hover:bg-blue-700">Partner
+                    with SAYes(orgs)</button>
+                </div>
+                <div class="flex w-12 gap-4 mb-8 lg:gap-14 lg:w-full">
+                  <img src="../assets/assets/images/sustainable-development-goals.svg" alt="SUSTAINABLE DEVELOPMENT">
+                  <img src="../assets/assets/home-page/Nike.svg" alt="Nike">
+                  <img src="../assets/assets/home-page/MayorOfLondon.svg" alt="mayor of London">
+                  <img src="../assets/assets/home-page/LondonStockExchange.svg" alt="London stock exchange">
+                </div>
+              </div>
+              <div>
+                <img src="../assets/assets/images/world-pins-2.png" alt="world-pins-2" class="hidden lg:block">
+              </div>
+            </div>
+
+          </div>
+      </div>
+      </section>
+    </div>
+<!-- Second page to  -->
+    <div class="mySlides fade">
+      <section class="bg-gradient-to-b from-[#008780] to-[#1827] lg:py-20 lg:px-36  py-10 px-10  ">
+        <div>
+          <div class="flex justify-center ">
+            <div>
+              <img src="../assets/assets/images/sayes-icon.svg" alt="sayes-logo" class="mb-3 h-[82px]  ">
+              <h1 class="mb-4 text-[32px] lg:text-[52.82px] font-bold ">Over 1000 mentors from <span
+                  class="text-[#FFB81C]">40 countries</span></h1>
+              <p class="mb-6 text-base sm:w-[560px] pr-10">SAYes is a non-profit organization that <span
+                  class="font-bold"> provides young people with</span> <span class="font-bold text-[#FFB81C]"><a
+                    href="https://sayesmentoring.org/about/" class="underline">free </a>mentorship</span> by matching
+                them with volunteer mentors who are professionally <span class="font-bold"> trained and supported by
+                  SAYes.</span></p>
+              <div class="flex flex-col gap-4 mb-6 sm:flex-row ">
+                <button
+                  class="px-4 py-2 font-bold text-black rounded-full text-[13px] bg-sky-50 hover:bg-sky-250 w-full">Apply
+                  for a Mentor (free!)</button>
+                <button
+                  class="px-4 w-full  py-2 font-bold text-black rounded-full bg-[#FFB81C] text-[13px] hover:bg-[#FFB81C]/50">Become
+                  a Mentor</button>
+                <button
+                  class="px-4 w-full py-2 font-bold text-white bg-[#1877F2] rounded-full text-[13px] hover:bg-[#1877F2]/50">Partner
+                  with SAYes(orgs)</button>
+              </div>
+              <div class="flex w-12 gap-4 mb-8 lg:gap-14 lg:w-full">
+                <img src="../assets/assets/images/sustainable-development-goals.svg" alt="SUSTAINABLE DEVELOPMENT">
+                <img src="../assets/assets/home-page/Nike.svg" alt="Nike">
+                <img src="../assets/assets/home-page/MayorOfLondon.svg" alt="mayor of London">
+                <img src="../assets/assets/home-page/LondonStockExchange.svg" alt="London stock exchange">
+              </div>
+            </div>
+            <div>
+              <img src="../assets/assets/images/world-pins-2.png" alt="world-pins-2" class="hidden lg:block">
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </section>
+    </div>
+
+
+
+    </div>
+    <br>
+
+    <div class="-mt-16 text-center">
+      <span class="bg-gray-500 dot" onclick="currentSlide(1)"></span>
+      <span class="bg-gray-500 dot" onclick="currentSlide(2)"></span>
+
+    </div>
+
+
+    <!-- How SAYes works Section  -->
+    <section>
+      <div class="py-10 px-6 text-center bg-gradient-to-b to-[#00B897] from-[#111827]   flex flex-col gap-4 ">
+        <h1 class="text-[32px] font-bold">How SAYes works</h1>
+        <p class="text-[21px]">Mentees meet with their mentors on a video call <span
+            class="font-bold text-[#FFB81C]">for 1 hour, once a week, for 9 months.</span></p>
+
+        <div class="flex justify-center gap-4 mt-4 divide-x ">
+          <div class="flex items-center">
+            <p class="px-4 text-sm align-middle">VIEW SOUTH AFRICAN PROGRAMME</p>
+            <a href="https://sayesmentoring.org/our-programmes/">
+              <img src="../assets/assets/images/sa-flag.svg" alt="uk flag"
+                class="object-cover w-full h-full rounded-full">
+            </a>
+          </div>
+
+          <div class="flex items-center pl-4">
+            <a href="https://sayesmentoring.org/sayes-mentoring-uk-get-involved/">
+              <img src="../assets/assets/home-page/UK ROUND FLAG.svg" alt="uk flag"
+                class="object-cover w-full h-full rounded-full">
+            </a>
+            <p class="px-4 text-sm text-uppercase">VIEW UNITED KINGDOM PROGRAMME</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION -->
+    <section class=" bg-gradient-to-b from-[#111827] to-[#303235] lg:px-36 lg:py-20 px-12 py-10">
+      <div class="lg:flex ">
+        <div>
+          <span>
+            <p class="mb-3 text-base font-bold">MENTORING LEADERS OF SOCIAL CHANGE SINCE 2008</p>
+            <h1 class="mb-3 text-lg font-bold lg:text-3xl">What does SAYes Mentoring do?</h1>
+            <p class="mb-2 lg:w-[700px]  lg:text-[22px]  ">We <span class="font-bold">design, deliver and support
+                mentorship programmes,</span> connecting independent volunteers and business team(mentors) with young
+              people (mentees) to support possitive life outcomes.</p>
+          </span>
+          <span class="mx-2 my-3">
+            <h1 class="lg:text-3xl text-xl font-bold text-[#FFB81C] mb-4">What does a mentor do?</h1>
+            <p class="mb-2 lg:w-[600px] lg:text-[22px] ">Mentors guide young people <span class="font-bold">to develop a
+                deep vision for their lives</span>, helping them to set <span class="font-bold">personal and
+                proffesional</span> goals supporting healthy growth in every are that matters</p>
+          </span>
+          <span class="mx-2 my-3">
+            <h1 class="mb-4 text-lg font-bold lg:text-2xl">Are you a <span class="text-[#76FCB2]">young person?</span>
+            </h1>
+            <p class="mb-2 lg:w-[520px]  lg:text-[22px] text-base ">If you`re ready to change your life, and improve the
+              quality of your decision making in every area, <a style="text-decoration:underline;"
+                href="apply for a mentor link" class="text-[#76FCB2]">Apply for a mentor now(free)</a></p>
+          </span>
+        </div>
+
+        <div class="mb-14">
+          <img src="../assets/assets/images/what-is-mentorship-2.png" alt="what-is-mentorship-2">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- THIRD SECTION -->
+    <section class="lg:py-20  lg:px-36 bg-gradient-to-b from-[#111827] to-[#00B897] py-10 px-4">
+      <div class="flex flex-col gap-8 lg:flex-row">
+        <div class="pr-8 ">
+          <img src="../assets/assets/images/what-is-mentorship.png" alt="mentorship" class="lg:h-[408px] sm:h-[204px] ">
+        </div>
+        <div class="text-center lg:text-start">
+          <img src="../assets/assets/images/sayes-icon.svg" alt="sayes-logo" class="mx-auto my-3 lg:mx-4">
+          <h1 class="mb-2 text-2xl lg:text-3xl font-bold lg:w-[520px] pr-4">Why mentorship is one of the best vehicles
+            <span class="text-[#FFB81C]">for social change.</span></h1>
+          <div class="lg:w-[700px]">
+            <p class="my-4">
+              Most change fails because it fails to consider how<span class="font-bold">powerfully social</span> human
+              beings are.<span class="text-[#76FCB2] font-bold"> We have foung that the best way to create lasting
+                change is through relationships.</span>
+            </p>
+            <p class="my-4 font-bold">
+              When high value relationships are <span class="text-[#FFB81C] ">structured and supported, </span>it <span
+                class="text-[#76FCB2] ">profoundly accelerates skills, values and knowledge in every area of
+                life.</span>
+            </p>
+            <p class="my-4">
+              Since 2008, we have used <span>structured and supported mentorships </span>to improve life outcomes for
+              thousands of young people.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOURTH SECTION -->
+    <section class="lg:py-10 lg:px-36 lg:pl-[280px] pl-4 bg-cover"
+      style="background-image: url('../assets/assets/images/backgrounds/era-of-mentorship.jpg');">
+      <div class="lg:py-[150px] py-36 text-center lg:text-start">
+        <img src="../assets/assets/images/sayes-icon.svg" alt="sayes-logo" class="h-24 mx-auto lg:mx-0">
+        <p class="font-bold lg:text-6xl">Enter the Era of Mentorship</p>
+        <p class="my-1 font-semibold ">A VISION OF THE WORLD POSSIBLE THROUGH MENTORSHIP</p>
+        <div class="flex flex-col gap-4 pt-4 mb-6 lg:flex-row">
+          <button class="px-4 py-2 font-bold text-black text-[13px] rounded-full bg-sky-50 hover:bg-sky-250">Apply for a
+            Mentor (free!)</button>
+          <button class="px-4 py-2 font-bold text-black text-[13px] rounded-full bg-amber-300 hover:bg-amber-500">Become
+            a Mentor</button>
+          <button class="px-4 py-2 font-bold text-white text-[13px] bg-blue-500 rounded-full hover:bg-blue-700">Partner
+            with SAYes (orgs)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIFTH SECTION -->
+    <section class="bg-gradient-to-b from-[#111827] to-[#FFB81C] lg:px-36 px-6 py-10">
+      <h1 class="pt-20 text-3xl font-bold pb-15">How can high quality mentorship be <span
+          class="text-[#FFB81C]">free?</span></h1>
+      <br>
+      <p class="text-[22px] pr-12">
+        We all know that if something is free, there's usually a catch.We're part of a <a
+          href="https://sayesmentoring.org/about/" class="underline"> new vision for philanthropy</a>, <span
+          class="font-bold">a growing global community committed to generosity at scale,</span> to fund massive social
+        change, focused on the world's most pressing problems.
+        <br> <br>
+        We are inspiring businesses, governments, and high net-worth individuals <span class="font-bold">to make social
+          change investments.</span> This allows us to offer <span class="font-bold">world-class training and support to
+          Mentors and Mentees, totally free.</span>
+        <br> <br>
+        <span class="font-bold">With new Mentors and new Mentees signing up everyday, our aim is to usher in a new era
+          of mentorship -</span> where valuable life lessons <span class="font-bold">can be gifted to young adults from
+          all over the world.</span>
+      </p>
+    </section>
+
+    <!-- SIXTHY SECTION -->
+    <section class="bg-gradient-to-b from-[#111827] to-[#303235] lg:px-36 px-6 py-10">
+      <div class="text-center ">
+        <p class="text-3xl font-bold">Be part of <span class="text-[#FFB81C]">the change.</span></p>
+        <p class="py-6 text-base ">SAYes prepare and equips Young People <span class="font-bold">for independence
+            through mentorship.</span>
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-center gap-6 pb-16 text-black lg:flex-row">
+        <!-- card1 -->
+        <div class="max-w-sm overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+          <img class="w-full" src="../assets/assets/images/change1.png" alt="Sunset in the mountains">
+          <div class="flex flex-col gap-2 px-6 py-4 text-center">
+            <img class="mx-auto" src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black">
+            <div class="mb-2 text-xl font-bold">Mentees</div>
+            <button class="px-4 py-2 font-bold text-black bg-[#008080] rounded-full hover:bg-[#008080]/50 ">Apply for a
+              Mentor (free!)</button>
+            <p class="text-base ">
+              <ul class="list-disc list-inside text-[#6B7280] ">
+                <li>100% free mentoring for 9 months</li>
+                <li>Choose your mentor</li>
+                <li>Real support when you need it most</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="flex flex-col max-w-sm gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+          <img class="w-full" src="../assets/assets/images/change2.png" alt="Sunset in the mountains">
+          <div class="flex flex-col gap-2 px-6 py-4 text-center ">
+            <img src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black" class="mx-auto">
+            <div class="mb-2 text-xl font-bold">Mentors</div>
+            <button class="px-4 py-2 font-bold text-black rounded-full bg-[#F7A600] hover:bg-[#F7A600]/50">Become a
+              Mentor</button>
+            <p class="text-base ">
+              <ul class="list-disc list-inside text-[#6B7280] ">
+                <li>100% free high-quality online training</li>
+                <li>Change a young person’s life.</li>
+                <li>Access to evidence-based tools for behaviour and perspective change.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="flex flex-col max-w-sm gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+          <img class="w-full" src="../assets/assets/images/change3.png" alt="Sunset in the mountains">
+          <div class="flex flex-col gap-2 px-6 py-4 text-center ">
+            <img src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black" class="mx-auto">
+            <div class="mb-2 text-xl font-bold">Partners</div>
+            <button class="px-4 py-2 mb-1 font-bold text-white bg-[#1877F2] rounded-full hover:bg-[#1877F2]/50">Partner
+              with SAYes(orgs)</button>
+            <p class="text-base ">
+              <ul class="list-disc list-inside text-[#6B7280] ">
+                <li>Consider a customised programme</li>
+                <li>Individuals / Businesses / Non-profits / Youth Partners</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SEVENTH SECTION -->
+    <section
+      class="bg-gradient-to-b from-[#131A28] to-[#00B897] lg:px-36 text-white lg:py-[140px] bg-green-900 py-10 px-10">
+      <div class="relative flex flex-col items-center gap-4 mx-auto lg:justify-between lg:max-w-6xl lg:flex-row">
+        <img src="../assets/assets/home-page/AbbaLoughran.png" alt="Mentee"
+          class="lg:absolute lg:py-10 lg:z-1 lg:h-[700px] ">
+        <div class="lg:pl-[500px] pl-4">
+          <blockquote class="text-3xl italic font-semibold">
+            <span class="text-amber-400">“If you feel like you don’t have anyone to talk to,</span> SAYes is for you.
+          </blockquote>
+          <p class="mt-4">
+            It has been the best experience for me and I hope other young people get to experience that too. They are
+            committed and won't let you down. Go for it, you only get one life.“
+          </p>
+
+          <div class="flex gap-4 pt-4 ">
+            <a href="https://sayesmentoring.org/sayes-mentoring-uk-get-involved/">
+              <img src="../assets/assets/home-page/UK ROUND FLAG.svg" alt="uk flag"
+                class="object-cover w-full h-full rounded-full">
+            </a>
+            <cite class="font-bold text-center text-amber-400">ABBA, Mentee, UK</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW VISION -->
+    <section class="relative py-[150px]  lg:h-[660px] bg-cover"
+      style="background-image: url('../assets/assets/images/backgrounds/generosity.png');">
+      <div class="px-10 lg:px-20">
+        <h1 class="mb-6 text-3xl font-extrabold lg:text-6xl">A new vision for philanthropy:</h1>
+        <p class="mb-4 lg:text-6xl font-extrabold text-3xl text-[#00B897]">Infectious generosity</p>
+        <blockquote class="mb-4 italic font-bold uppercase">“Generosity is a key ingredient for a contented life”
+        </blockquote>
+        <cite class="block mb-6 font-bold uppercase">Chris Anderson, <span
+            class="font-extrabold text-[#E62B1E]">TED</span></cite>
+        <button
+          class="px-4 py-2 mb-1 font-bold text-white  text-[13px] bg-[#00B897] rounded-full hover:bg-[#00B897]/50">Become
+          a donor today</button>
+      </div>
+    </section>
+
+    <!-- MENTORSHIP PROGRAMMES -->
+    <section class="text-center bg-[#000000]">
+      <div class="container flex flex-col px-4 py-12 mx-auto">
+        <div class="mb-8 text-center">
+          <span class="bg-[#E62B1E] text-xs font-semibold mr-2 px-2.5 py-1 rounded text-white">NEW</span>
+          <h2 class="mb-4 text-4xl font-extrabold">Now offering Customised Mentorship Programmes</h2>
+          <p class="mb-6">SAYes offers customised mentorship and social change mentorship programmes for corporates.</p>
+          <p class="mb-8 font-bold">View our current programmes and partner portals below:</p>
+          <button
+            class="px-4 py-2 font-bold text-black transition duration-300 bg-white border border-white rounded-full hover:bg-transparent hover:text-white">Apply
+            for a Customised Mentorship Program</button>
+        </div>
+
+        <div class="flex items-center justify-center h-10 gap-4 mb-8 lg:gap-14 lg:w-full ">
+          <img src="../assets/assets/home-page/Nike.svg" alt="Nike" class="lg:w-max">
+          <img src="../assets/assets/home-page/LondonStockExchange.svg" alt="London Stock Exchange"
+            class="w-16 lg:h-12 lg:w-max">
+          <img src="../assets/assets/home-page/InverReLogo.svg" alt="Inver Re" class="h-12">
+          <img src="../assets/assets/home-page/AlternativeProsperityLogo.svg" alt="Alternative Prosperity" class="h-12">
+        </div>
+
+        <div class="flex justify-center">
+          <button
+            class="px-4 py-2 text-black transition duration-300 bg-[#76FCB2]  rounded-full hover:bg-white hover:text-black">View</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAY INFORMED -->
+    <section class="bg-gradient-to-b from-[#111827] to-[#303235] p-20">
+      <div class="flex flex-col justify-center lg:flex-row">
+        <img src="../assets/assets/images/sayes-icon.svg" alt="sayesicon" class="lg:h-[209px] h-[100px]">
+        <div class="flex-shrink-0">
+          <svg class="w-20 h-20 text-[#76FCB2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- SVG content here -->
+          </svg>
+        </div>
+
+        <div class="p-2 text-center">
+          <h2 class="py-1 text-3xl font-bold">Stay informed</h2>
+          <p class="py-2 text-lg">SIGN UP FOR OUR NEWSLETTER</p>
+          <p class="py-2">Please email <a href="mailto:wendy.hamilton@sayesmentoring.org"
+              class="text-[#76FCB2]hover:text-[#76FCB2]/50">wendy.hamilton@sayesmentoring.org</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="bg-[#000000] px-20 py-10">
+    <div class="flex flex-col lg:flex-row lg:justify-between">
+      <div class="lg:row-span-3">
+        <img src="../assets/assets/images/sayes-logo.svg" alt="SAYes Mentoring" class="mb-4">
+        <!-- Replace with your logo path -->
+        <p class="mb-4 text-xs">
+          South African Youth Education for Sustainability (SAYes) Trust, registration no. IT <br>374/2009 PBO no. 930
+          033 503 Section 18A, registered in <br> South Africa.Level One (135% B-BBEE procurement recognition)<br> SAYes
+          Mentoring Ltd. charity no. 1127701 and company no. 6693065, registered in <br> England and Wales.
+        </p>
+        <p class="text-xs text-green-400">
+          Copyright &copy; 2023 SAYes. All rights reserved.<br>
+          Design by ABC Design Studio
+        </p>
+      </div>
+
+      <div class="text-left lg:row-span-3">
+        <a href="#terms" class="block py-2 text-sm hover:text-gray-300">Terms</a>
+        <a href="#privacy-policy" class="block py-2 text-sm hover:text-gray-300">Privacy Policy</a>
+        <a href="#cookies" class="block py-2 text-sm hover:text-gray-300">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>
