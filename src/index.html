@@ -26,8 +26,8 @@
               <a href="#" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:text-white">Mentors</a>
 
               <div>
-                <button type="button" id="partner-dropdown-mobile"
-                  class="flex items-center  w-full px-3 pt-2 text-sm font-medium text-white rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
+                <button type="button" id="partner-dropdown"
+                  class=" flex items-center  w-full px-3 pt-2 text-sm font-medium text-white rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
                   Patner with us
                   <span>
                     <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -38,6 +38,15 @@
                     </svg>
                   </span>
                 </button>
+                  <!-- Dropdown menu -->
+            <div id="partner-dropdown-menu"
+              class="absolute z-10 hidden w-56 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="partner-dropdown-mobile">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 1</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 2</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 3</a>
+              </div>
+            </div>
               </div>
 
             </div>
@@ -83,10 +92,10 @@
                   Programmes</a>
               </div>
 
-              <!-- Partner with us dropdown -->
+              <!-- Option with us dropdown -->
               <div class="relative inline-block text-left">
                 <div>
-                  <button type="button" id="partner-dropdown-mobile"
+                  <button type="button" id="options-dropdown"
                     class="flex items-center  w-full px-3 pt-1 text-sm font-medium text-white rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
                     Options
                     <span>
@@ -100,9 +109,9 @@
                   </button>
                 </div>
                 <!-- Dropdown menu -->
-                <div id="partner-dropdown-menu"
+                <div id="options-dropdown-menu"
                   class="absolute z-10 hidden w-56 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="partner-dropdown">
+                  <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="option-dropdown">
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option
                       1</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option
@@ -154,37 +163,36 @@
               Programmes</a>
           </div>
           <!-- Patner with us dropdown in mobile menu -->
-          <div class="relative text-left">
-            <div>
-              <button type="button" id="partner-dropdown-mobile"
-                class="flex items-center  w-full px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
-                Patner with us
-                <span>
-                  <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                    fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd" />
-                  </svg>
-                </span>
-              </button>
-            </div>
-            <!-- Dropdown menu -->
+          
+              <div>
+                <button type="button" id="partner-dropdown-mobile"
+                  class=" flex items-center  w-full px-3 pt-2 text-sm font-medium text-white rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
+                  Patner with us
+                  <span>
+                    <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </button>
+                  <!-- Dropdown menu -->
             <div id="partner-dropdown-menu-mobile"
               class="absolute z-10 hidden w-56 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="partner-dropdown-mobile">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="partner-dropdown-menu-mobile">
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 1</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 2</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 3</a>
               </div>
             </div>
-          </div>
+              </div>
 
 
           <!-- options -->
           <div class="relative text-left">
             <div>
-              <button type="button" id="options-dropdown-mobile"
+              <button type="button" id="option-dropdown-mobile"
                 class="flex items-center  w-full px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
                 Options
                 <span>
@@ -198,9 +206,9 @@
               </button>
             </div>
             <!-- Dropdown menu -->
-            <div id="options-dropdown-menu-mobile"
+            <div id="option-dropdown-menu-mobile"
               class="absolute z-10 hidden w-56 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-dropdown-mobile">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="option-dropdown-mobile">
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 1</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 2</a>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 3</a>
@@ -667,6 +675,67 @@
         mobileMenu.classList.toggle('hidden');
       });
    
+      // options dropdown 
+      const optionsDropdownButtonMobile=document.getElementById('options-dropdown');
+      const optionsDropdownMenu=document.getElementById('options-dropdown-menu');
+
+      optionsDropdownButtonMobile.addEventListener('click',function(event){
+        event.stopPropagation();
+        optionsDropdownMenu.classList.toggle('hidden');
+      });
+
+     document.addEventListener('click',function(event){
+       if(!optionsDropdownButtonMobile.contains(event.target) ){
+         optionsDropdownMenu.classList.add('hidden');
+       }
+      });
+
+ // options mobile  dropdown 
+      const optionDropdownButtonMobile=document.getElementById('option-dropdown-mobile');
+      const optionDropdownMenu=document.getElementById('option-dropdown-menu-mobile');
+
+      optionDropdownButtonMobile.addEventListener('click',function(event){
+        event.stopPropagation();
+        optionDropdownMenu.classList.toggle('hidden');
+      });
+
+     document.addEventListener('click',function(event){
+       if(!optionDropdownButtonMobile.contains(event.target) ){
+         optionDropdownMenu.classList.add('hidden');
+       }
+      });
+      
+      // partner dropdown desktop
+      const partnerDropdownButton = document.getElementById('partner-dropdown'); 
+      const partnerDropdownMenu = document.getElementById('partner-dropdown-menu');
+
+      partnerDropdownButton.addEventListener('click', function (event) {
+        event.stopPropagation();
+        partnerDropdownMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!partnerDropdownButton.contains(event.target)) {
+          partnerDropdownMenu.classList.add('hidden');
+        }
+      });
+
+          
+        // partner dropdown mobile
+      const partnerDropdownButtonMobile = document.getElementById('partner-dropdown-mobile'); 
+      const partnerDropdownMenuMobile = document.getElementById('partner-dropdown-menu-mobile');
+
+      partnerDropdownButtonMobile.addEventListener('click', function (event) {
+        event.stopPropagation();
+        partnerDropdownMenuMobile.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', function (event) {
+        if (!partnerDropdownButtonMobile.contains(event.target)) {
+          partnerDropdownMenuMobile.classList.add('hidden');
+        }
+      });
+
 
     });
   </script>
