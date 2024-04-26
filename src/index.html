@@ -171,7 +171,7 @@
                   <!-- options -->
                   <div class="relative text-left">
                      <div>
-                        <button type="button" id="option-dropdown-mobile"
+                        <button type="button" id="options-dropdown-mobile"
                            class="flex items-center  w-full px-3 py-2 text-sm font-medium text-white rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-[#FFB81C] focus:border-transparent">
                            Options
                            <span>
@@ -185,7 +185,7 @@
                         </button>
                      </div>
                      <!-- Dropdown menu -->
-                     <div id="option-dropdown-menu-mobile"
+                     <div id="options-dropdown-menu-mobile"
                         class="absolute z-10 hidden w-56 mt-2 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="option-dropdown-mobile">
                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Option 1</a>
@@ -623,32 +623,32 @@
            });
          
            // options dropdown 
-           const optionsDropdownButtonMobile=document.getElementById('options-dropdown');
+           const optionsDropdownButton=document.getElementById('options-dropdown');
            const optionsDropdownMenu=document.getElementById('options-dropdown-menu');
          
-           optionsDropdownButtonMobile.addEventListener('click',function(event){
+           optionsDropdownButton.addEventListener('click',function(event){
              event.stopPropagation();
              optionsDropdownMenu.classList.toggle('hidden');
            });
          
           document.addEventListener('click',function(event){
-            if(!optionsDropdownButtonMobile.contains(event.target) ){
+            if(!optionsDropdownButton.contains(event.target) ){
               optionsDropdownMenu.classList.add('hidden');
             }
            });
          
          // options mobile  dropdown 
-           const optionDropdownButtonMobile=document.getElementById('option-dropdown-mobile');
-           const optionDropdownMenu=document.getElementById('option-dropdown-menu-mobile');
+           const optionsDropdownButtonMobile=document.getElementById('options-dropdown-mobile');
+           const optionsDropdownMenuMobile=document.getElementById('options-dropdown-menu-mobile');
          
-           optionDropdownButtonMobile.addEventListener('click',function(event){
+           optionsDropdownButtonMobile.addEventListener('click',function(event){
              event.stopPropagation();
-             optionDropdownMenu.classList.toggle('hidden');
+             optionsDropdownMenuMobile.classList.toggle('hidden');
            });
          
           document.addEventListener('click',function(event){
-            if(!optionDropdownButtonMobile.contains(event.target) ){
-              optionDropdownMenu.classList.add('hidden');
+            if(!optionsDropdownButtonMobile.contains(event.target) ){
+              optionsDropdownMenuMobile.classList.add('hidden');
             }
            });
            
