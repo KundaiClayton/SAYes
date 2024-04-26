@@ -222,14 +222,14 @@
     <div>
 
       <div class="mySlides fade">
-        <section class="bg-gradient-to-b from-[#008080] to-[#111827] lg:py-20 lg:px-36  py-10 px-10  ">
-          <div>
-            <div class="flex justify-center ">
+        <section class="bg-gradient-to-b from-[#008080] to-[#111827] lg:py-20 lg:px-28  py-10 px-10  ">
+          <div class="flex ">
+            <div class="flex justify-center  min-w-[50%] ">
               <div>
                 <img src="../assets/assets/images/sayes-icon.svg" alt="sayes-logo" class="mb-3 h-[82px]  ">
                 <h1 class="mb-4 text-[32px] lg:text-[52.82px] font-bold ">Over 1000 mentors from <span
                     class="text-amber-400">40 countries</span></h1>
-                <p class="mb-6 text-base sm:w-[560px] pr-10">SAYes is a non-profit organization that <span
+                <p class="mb-6 text-base lg:w-[560px] pr-4">SAYes is a non-profit organization that <span
                     class="font-bold"> provides young people with</span> <span class="font-bold text-amber-400"><a
                       href="https://sayesmentoring.org/about/" class="underline">free </a>mentorship</span> by matching
                   them with volunteer mentors who are professionally <span class="font-bold"> trained and supported by
@@ -252,11 +252,11 @@
                   <img src="../assets/assets/home-page/LondonStockExchange.svg" alt="London stock exchange">
                 </div>
               </div>
-              <div>
-                <img src="../assets/assets/images/world-pins-2.png" alt="world-pins-2" class="hidden lg:block">
-              </div>
+             
             </div>
-
+            <div class="flex flex-grow flex-shrink-0">
+                <img src="../assets/assets/images/world-pins-2.png" alt="world-pins-2" class="hidden lg:block">
+            </div>
           </div>
       </div>
       </section>
@@ -293,7 +293,7 @@
                 <img src="../assets/assets/home-page/LondonStockExchange.svg" alt="London stock exchange">
               </div>
             </div>
-            <div>
+            <div  >
               <img src="../assets/assets/images/world-pins-2.png" alt="world-pins-2" class="hidden lg:block">
             </div>
           </div>
@@ -308,7 +308,7 @@
     </div>
     <br>
 
-    <div class="-mt-16 text-center">
+    <div class="py-4 -mt-32 text-center">
       <span class="bg-gray-500 dot" onclick="currentSlide(1)"></span>
       <span class="bg-gray-500 dot" onclick="currentSlide(2)"></span>
 
@@ -456,7 +456,7 @@
 
       <div class="flex flex-col justify-center gap-6 pb-16 text-black lg:flex-row">
         <!-- card1 -->
-        <div class="max-w-sm overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+        <div class="max-w-[333px] overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
           <img class="w-full" src="../assets/assets/images/change1.png" alt="Sunset in the mountains">
           <div class="flex flex-col gap-2 px-6 py-4 text-center">
             <img class="mx-auto" src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black">
@@ -473,7 +473,7 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="flex flex-col max-w-sm gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+        <div class="flex flex-col max-w-[333px]  gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
           <img class="w-full" src="../assets/assets/images/change2.png" alt="Sunset in the mountains">
           <div class="flex flex-col gap-2 px-6 py-4 text-center ">
             <img src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black" class="mx-auto">
@@ -490,7 +490,7 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="flex flex-col max-w-sm gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
+        <div class="flex flex-col max-w-[333px]  gap-4 overflow-hidden text-center rounded-lg shadow-lg bg-sky-50">
           <img class="w-full" src="../assets/assets/images/change3.png" alt="Sunset in the mountains">
           <div class="flex flex-col gap-2 px-6 py-4 text-center ">
             <img src="../assets/assets/home-page/sayes_icon_black.svg" alt="sayes_icon_black" class="mx-auto">
@@ -666,11 +666,7 @@
       mobileMenuToggle.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
       });
-      const partnerDropdownToggle = document.getElementById('partner-dropdown');
-      const partnerDropdownMenu = document.getElementById('partner-dropdown-menu');
-
-      const partnerDropdownToggleMobile = document.getElementById('partner-dropdown-mobile');
-      const partnerDropdownMenuMobile = document.getElementById('partner-dropdown-menu-mobile');
+   
 
     });
   </script>
